@@ -27,9 +27,3 @@ jobs:
         npm install
         npm install --save-dev webpack-cli
         npx vite build
-
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
-      with:
-          github_token: ${{ secrets.GITHUB_TOKEN }} # GitHub自动生成的令牌
-          publish_dir: ./dist # 部署Webpack输出的dist目录    
