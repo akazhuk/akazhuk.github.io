@@ -15,19 +15,19 @@ const desc = ref();
 
 // 在组件挂载后解析参数（确保路由已加载）
 onMounted(async () => {
-  try {
-    const response = await axios.get(import.meta.env.VITE_BASE_URL + '/api/skills');
-    console.log('response: ', response);
-    serverDevSkills.value = response.data.server_dev_skills;
-    clientDevSkills.value = response.data.client_dev_skills;
-    databaseSkills.value = response.data.database_skills;
-    nosqlSkills.value = response.data.nosql_skills;
-    serverSkills.value = response.data.server_skills;
-    desc.value = response.data.desc;
+//   try {
+//     const response = await axios.get(import.meta.env.VITE_BASE_URL + '/api/skills');
+//     console.log('response: ', response);
+//     serverDevSkills.value = response.data.server_dev_skills;
+//     clientDevSkills.value = response.data.client_dev_skills;
+//     databaseSkills.value = response.data.database_skills;
+//     nosqlSkills.value = response.data.nosql_skills;
+//     serverSkills.value = response.data.server_skills;
+//     desc.value = response.data.desc;
 
-  } catch (error) {
-    console.log('Erro fetching data: ', error);
-  }
+//   } catch (error) {
+//     console.log('Erro fetching data: ', error);
+//   }
 })
 
 </script>
