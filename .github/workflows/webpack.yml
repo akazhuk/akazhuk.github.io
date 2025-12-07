@@ -38,4 +38,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: /public # 关键：指向构建后的目录
+        publish_dir: ./public # 关键：指向构建后的目录
