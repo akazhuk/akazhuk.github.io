@@ -18,19 +18,19 @@ const desc = ref();
 const gif = ref();
 
 onMounted(async () => {
-  try {
-    const response = await axios.get(import.meta.env.VITE_BASE_URL + '/api/info');
-    console.log('response: ', response);
-    avatar.value = response.data.avatar;
-    nickname.value = response.data.nickname;
-    mobile.value = response.data.mobile;
-    email.value = response.data.email;
-    desc.value = response.data.desc;
-    gif.value = response.data.coding;
+//   try {
+//     const response = await axios.get(import.meta.env.VITE_BASE_URL + '/api/info');
+//     console.log('response: ', response);
+//     avatar.value = response.data.avatar;
+//     nickname.value = response.data.nickname;
+//     mobile.value = response.data.mobile;
+//     email.value = response.data.email;
+//     desc.value = response.data.desc;
+//     gif.value = response.data.coding;
 
-  } catch (error) {
-    console.log('Erro fetching data: ', error);
-  }
+//   } catch (error) {
+//     console.log('Erro fetching data: ', error);
+//   }
 })
 
 </script>
@@ -39,7 +39,7 @@ onMounted(async () => {
   <header>
 <!--    <img alt="Vue logo" class="logo" :src="avatar" width="125" height="125" />-->
     <div>
-      <img alt="coding gif" class="logo" :src="gif" width="125" height="125" />
+      <img alt="coding gif" class="logo" src="./images/coding.gif" width="125" height="125" />
     </div>
     <div class="wrapper">
 

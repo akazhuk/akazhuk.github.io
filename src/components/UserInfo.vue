@@ -11,18 +11,21 @@ defineProps<{
   <div class="greetings">
     <h1 class="green">hello world!</h1>
     <h3>
-      昵称：{{ nickname }}
+      昵称：JkTam 
     </h3>
     <h3>
-      手机号：{{ mobile }}
+      手机号：13288447064
     </h3>
     <h3>
-      邮箱：{{ email }}
+      邮箱：511979003@qq.com
     </h3>
   </div>
   <div>
     <h3>
-      你好！这是我的个人网站，可以从下面的标签了解我的技术栈和工作经历。
+      你好！这是我的个人网站
+    </h3>
+    <h3>
+    可以从下面的标签了解我的技术栈和工作经历。
     </h3>
   </div>
 </template>

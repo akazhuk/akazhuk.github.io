@@ -10,7 +10,7 @@ export default defineConfig({
   base: '/index',
   build: {
     // outDir: path.resolve(__dirname, '../tp/public/index')
-    outDir: path.resolve(__dirname, 'public/index')
+    outDir: path.resolve(__dirname, 'index')
   },
   plugins: [
     vue(),
