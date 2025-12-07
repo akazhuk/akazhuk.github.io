@@ -50,7 +50,6 @@ onMounted(async () => {
         <RouterLink to="/skills"> 技术栈 </RouterLink>
         <RouterLink to="/work_exp"> 工作经历 </RouterLink>
         <RouterLink to="/resume_file"> 简历附件 </RouterLink>
-        <!--        <RouterLink to="/test">简历附件</RouterLink>-->
       </nav>
     </div>
   </header>
