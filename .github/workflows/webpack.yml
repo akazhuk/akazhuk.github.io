@@ -26,4 +26,4 @@ jobs:
       run: |
         npm install
         npm install --save-dev webpack-cli
-        vite build
+        npx vite build
