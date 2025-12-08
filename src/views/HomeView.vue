@@ -17,18 +17,11 @@
             </div> -->
             <!-- 代码块 -->
             <CodeBlock lang="java" 
-code="$coffeeIngredient = '水';
-      switch ($coffeeIngredient) {
-        case '水':
-            echo '美式';
-            break;
-        case '牛奶':
-            echo '拿铁';
-            break;
-        default:
-            echo '意式浓缩';
-            break;
-        }"
+code="function helloWorld(): void
+      {
+        echo 'Hello World!'
+      }
+      helloWorld();"
 />
         </div>
     </main>
