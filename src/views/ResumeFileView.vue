@@ -15,9 +15,10 @@
 
 <script setup>
 import { ref } from 'vue';
+import resumePdf from '@/assets/谭柱坤-简历.pdf'
 
 // PDF文件路径（public目录下，纯英文命名！）
-const resumePdfUrl = '/src/assets/谭柱坤-简历.pdf';
+const resumePdfUrl = resumePdf;
 
 // 在线预览：打开新标签页（浏览器自带PDF预览）
 const previewResume = () => {
