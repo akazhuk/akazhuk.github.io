@@ -1,27 +1,17 @@
 <template>
     <main>
-        <!-- 单列图文容器 -->
+        <!-- 图文容器 -->
         <div class="single-img-text">
-            <!-- 图片区域：适配比例，防止拉伸 -->
             <div class="img-wrapper">
-                <!-- 本地图片：public目录下（推荐） -->
                 <img src="/src/images/espresso.jpg" alt="简历封面" class="content-img" loading="lazy">
-                <!-- 若用assets目录图片：src="@/assets/resume-cover.png" -->
-                <!-- 网络图片：src="https://xxx.com/resume-cover.png" -->
             </div>
-            <!-- 文字区域：居中对齐 -->
-            <!-- <div class="text-wrapper">
-                <h3 class="text-title">意式浓缩</h3>
-                <p class="text-desc">加水=美式，加牛奶=拿铁/卡布奇诺</p>
-                <p class="text-desc">咖啡如此，人生亦如此，共勉！</p>
-            </div> -->
             <!-- 代码块 -->
             <CodeBlock style="text-align: left;" lang="javascript" 
-code="function helloWorld()
+code="function enjoyCoffee()
       {
-        console.log('Hello World!')
+        console.log('Enjoy Coffee!')
       }
-      helloWorld();"
+      enjoyCoffee();"
 />
         </div>
     </main>
