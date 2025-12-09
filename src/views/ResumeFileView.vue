@@ -7,7 +7,7 @@
             </button>
             <!-- 下载按钮 -->
             <button class="resume-btn download-btn" @click="downloadResume">
-                下载简历附件
+                下载附件
             </button>
         </div>
     </main>
