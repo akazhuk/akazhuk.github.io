@@ -13,6 +13,7 @@
             <div class="line-numbers" v-if="showLineNumbers">
                 <span v-for="i in lineCount" :key="i">{{ i }}</span>
             </div>
+            <!-- 代码区 -->
             <pre class="code-pre">
       <code :class="`language-${lang}`" v-html="highlightedCodeWithCursor"></code>
     </pre>
@@ -241,6 +242,20 @@ onUnmounted(() => {
     /* 新增：关键！让按钮相对于代码块定位 */
 }
 
+/* 代码容器：与行号容器的padding、行高统一 */
+.code-pre {
+    margin: 0;
+    padding: 8px 12px;
+    /* 顶部/底部padding和行号容器一致 */
+    background: #1e1e1e;
+    line-height: 1.5;
+    /* 与行号的line-height完全一致 */
+    overflow-x: auto;
+    flex: 1;
+    box-sizing: border-box;
+    padding-left: 10px; /* 代码区左侧加一点点间距，和行号区边框呼应 */
+}
+
 /* 新增：Run按钮样式（右上角、简约风格） */
 .run-code-btn {
     position: absolute;
@@ -298,11 +313,12 @@ onUnmounted(() => {
 /* 行号容器：与代码容器的padding完全匹配 */
 .line-numbers {
     padding: 8px 0;
-    /* 和代码容器的padding-top/padding-bottom一致 */
-    background: #181818;
+    background: #1c1c1c !important;
     text-align: right;
     padding-right: 8px;
     /* 行号右侧留间距 */
+    min-width: 30px;
+    border-right: 1px solid #282828; /* 加细边框，替代背景色区分，更柔和 */
 }
 
 /* 行号单个数字：与代码行的行高、基线完全对齐 */
@@ -315,19 +331,6 @@ onUnmounted(() => {
     /* 与代码行的line-height完全一致 */
     height: 1.5em;
     /* 强制行高=高度，避免空白偏差 */
-    box-sizing: border-box;
-}
-
-/* 代码容器：与行号容器的padding、行高统一 */
-.code-pre {
-    margin: 0;
-    padding: 8px 12px;
-    /* 顶部/底部padding和行号容器一致 */
-    color: #fff;
-    line-height: 1.5;
-    /* 与行号的line-height完全一致 */
-    overflow-x: auto;
-    flex: 1;
     box-sizing: border-box;
 }
 
