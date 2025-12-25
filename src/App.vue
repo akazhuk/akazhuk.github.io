@@ -39,7 +39,7 @@ onMounted(async () => {
   <header>
 <!--    <img alt="Vue logo" class="logo" :src="avatar" width="125" height="125" />-->
     <div>
-      <img alt="coding gif" class="logo" src="./images/coding.gif" width="125" height="125" />
+      <img alt="coding gif" class="logo" src="./images/cat_coffee.jpg" width="125" height="125" />
     </div>
     <div class="wrapper">
       <UserInfo :nickname=nickname :mobile=mobile :email=email :desc=desc />
